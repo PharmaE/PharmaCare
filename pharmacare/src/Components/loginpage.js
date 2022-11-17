@@ -1,6 +1,8 @@
 import "./loginpage.css";
 import React from "react";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Checkbox, Form, Input} from "antd";
+import Paper from '@mui/material/Paper';
+import Footer from "./Footer";
 
 export default function Login() {
   const onLogin = (values) => {
@@ -12,6 +14,14 @@ export default function Login() {
   };
   return (
     <div>
+      <Paper
+      sx={{
+        p: 2,
+        margin: 'auto',
+        maxWidth: 500,
+        flexGrow: 1,
+        backgroundColor: (theme) =>
+          theme.palette.mode === 'dark' ? '#1A2027' : '#fff',}}>
       <header>
         <h1>PharmaCare</h1>
       </header>
@@ -64,10 +74,17 @@ export default function Login() {
         }}
       >
         <Button type="primary" htmlType="submit">
-          Submit
+          Log In
+        </Button> <br/>
+        <Button type="primary" htmlType="submit">
+          Sign Up
         </Button>
       </Form.Item>
       </form>
+      </Paper>
+      <Footer/>
+      
     </div>
+ 
   );
 }
