@@ -14,19 +14,21 @@ export default function Login() {
   };
   return (
     <div>
-      <Paper
+      <header className="header">
+        <h1>PharmaCare</h1>
+      </header>
+      <Paper className="login-paper" 
       sx={{
         p: 2,
         margin: 'auto',
-        maxWidth: 500,
+        maxWidth: 300,
+        
         flexGrow: 1,
         backgroundColor: (theme) =>
           theme.palette.mode === 'dark' ? '#1A2027' : '#fff',}}>
-      <header>
-        <h1>PharmaCare</h1>
-      </header>
+   
 
-      <form
+      <form 
         name="basic"
         labelCol={{ span: 8 }}
         wrapperCol={{ span: 16 }}

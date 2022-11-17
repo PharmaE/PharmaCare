@@ -22,12 +22,11 @@ export default function Footer(){
 
         </List.Item>
         <List.Item className="footer-listitem">
-          <Header className="footer-heading">Contact Us</Header>
-          <Link className="footer-link">Toronto</Link><br/>
-          <Link className="footer-link">Missisauga</Link><br/>
-          <Link className="footer-link">Alberta</Link><br/>
+          <Header className="footer-heading">Contact Info</Header>
+          <Link className="footer-link">2199 Joseph st, Missisauga, ON , Canada</Link><br/>
+          <Link className="footer-link">+1 258-992-4589</Link><br/>
 
-        </List.Item>
+          </List.Item>
 
 
         </Row>
