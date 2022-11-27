@@ -1,39 +1,44 @@
-import {  Datepicker,Row,Col,Card} from antd;
+import {  Datepicker,Row,Col,Divider} from antd;
 import './App.css';
+import {useState ,useEffect } from 'react';
 import { useActionData } from 'react-router-dom';
+import axios from 'axios';
 
 function App() {
+  const[medication, setMedication]=useState(null);
+  const[status,setStatus]=useEffect(false);
+  useEffect(()=>{
+    axios.get('https://jsonplaceholder.typicode.com/').then((response)=>{
+      setMedication(response.data);
+      setStatus(true);
+    }).catch(()=>{
+      console.log('api call failed');
+      setStatus(false);
+    })
+    
+  },[])
+
+
   return (
+    <div>
   <Row gutter={16}>
     <Col className='gutter-row' span={6} xs={24} xl={8}>
-  <div>Hello
-  <Card title="Default size card"
-      extra={<a href="#">More</a>}
-      style={{
-        width: 300,
-      }}
-    >
-       <p>Card content</p>
-      <p>Card content</p>
-      <p>Card content</p>
-    </Card>
-  </div>
-  </Col>
+ </Col>
+  
+  
   <Col className='gutter-row' xl={16} xs={24}>
-  <Card title="Default size card"
-      extra={<a href="#">More</a>}
-      style={{
-        width: 300,
-      }}
-    >
-       <p>Card content</p>
-      <p>Card content</p>
-      <p>Card content</p>
-    </Card>
-
+Header
   </Col>
   </Row>
+  <Divider orientation='left'>
+    Item
+  </Divider>
+    <Row gutter={16}></Row>
+
+  
+  </div>
   );
 }
 
 export default App;
+
