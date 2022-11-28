@@ -26,3 +26,10 @@ Aim:- Making the basic page of the website Like Login, Home, Shop, Contacts
 Login page is done now it's time style it.
 
 !!!!!!!!!!!!!!!Running out of Time!!!!!!!!!!!!!!!!!!!
+
+2022-11-23
+
+12:38 PM:- Add the antd css to index.css and App.js. Getting some errors.
+Remove the antd css from index.js and now veything is compiled without any errors.
+
+1:44 PM:- Add the list ofdoc. Including the images in it.

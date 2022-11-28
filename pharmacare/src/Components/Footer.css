@@ -6,6 +6,7 @@
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;  
+    margin-top: 140px;
     
     position:absolute;
     background-color: rgb(16, 14, 12); 
@@ -52,4 +53,5 @@
 
 footer{
     color: rgb(14, 230, 129);
+    text-align: center;
 }
