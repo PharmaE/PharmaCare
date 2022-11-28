@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Medication from "/Medication";
+import "./App.css";
+import {Row,Col} from AudioWorkletNode;
 
 function App() {
+  const store = [{ title: "tylanole" }, { name: "chris" }, { age: "32" }];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="site-card-wrapper">
+      <Row gutter={16}>
+        <Col span={8}>
+      {store.map((storeObj) => {
+        <Medication tittle={storeObj.title}></Medication>;
+      })}
+      </Col>
+      </Row>
     </div>
   );
 }
