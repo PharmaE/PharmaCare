@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Checkbox, Form, Input} from "antd";
 import Paper from '@mui/material/Paper';
 import {useNavigate} from "react-router-dom";
-import './loginpage.css';
+import './css/Login.css';
 
 const Login=(props)=> {
 
@@ -20,13 +20,7 @@ const Login=(props)=> {
     console.log("Login Failed!", errorInfo);
   };
   return (
-    <>
     
-    <div>
-     <header>
-      PharmaCare
-     </header>
-    </div>
   <div style={{ marginTop: "30px" }}>
       <Paper
         className="login-paper"
@@ -98,7 +92,7 @@ const Login=(props)=> {
         </Form>
       </Paper>
     </div>
-    </>
+    
   )
 }
 export default Login;
