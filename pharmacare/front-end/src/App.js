@@ -8,8 +8,6 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Medication from "/Medication";
 
-import {Row,Col} from AudioWorkletNode;
-
 
 function App() {
 
@@ -41,23 +39,7 @@ function App() {
 
   return (
     <>
-    <div>
-  <Row gutter={16}>
-    <Col className='gutter-row' span={6} xs={24} xl={8}>
- </Col>
-  
-  
-  <Col className='gutter-row' xl={16} xs={24}>
-Header
-  </Col>
-  </Row>
-  <Divider orientation='left'>
-    Item
-  </Divider>
-    <Row gutter={16}></Row>
 
-  
-  </div>
   <div>
   <Routes>
    
@@ -76,9 +58,9 @@ Header
       </Col>
       </Row>
     </div>
-  );
+  
 </>
-  );
+);
 }
 
 export default App;
