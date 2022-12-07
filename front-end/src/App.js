@@ -1,11 +1,11 @@
-import { Row,Col,Divider} from 'antd';
+import { Row,Col} from 'antd';
 import './App.css';
 import {useState ,useEffect } from 'react';
-import { useActionData } from 'react-router-dom';
+//import { useActionData } from 'react-router-dom';
 import axios from 'axios';
 import { Route, Routes } from "react-router-dom";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
+import Login from "./Pages/Login";
+import Home from "./Pages/Home";
 import Medication from "/Medication";
 
 
@@ -57,11 +57,12 @@ function App() {
       })}
       </Col>
       </Row>
-    </div>
-  
+</div>
+
 </>
 );
 }
 
 export default App;
+
 
