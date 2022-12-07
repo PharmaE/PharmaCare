@@ -33,3 +33,4 @@ Login page is done now it's time style it.
 Remove the antd css from index.js and now veything is compiled without any errors.
 
 1:44 PM:- Add the list ofdoc. Including the images in it.
+
