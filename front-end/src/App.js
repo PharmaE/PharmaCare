@@ -1,17 +1,17 @@
-import { Row,Col,Divider} from 'antd';
+import { Row,Col} from 'antd';
 import './App.css';
 import {useState ,useEffect } from 'react';
 import { useActionData } from 'react-router-dom';
 import axios from 'axios';
 import { Route, Routes } from "react-router-dom";
-import Login from "../../../front-end/src/Pages/Login";
-import Home from "../../../front-end/src/Pages/Home";
-import Medication from "/Medication";
+import Login from "./Pages/Login";
+import Home from "./Pages/Home";
+import Medication from "./Pages/Medication";
 
 
 function App() {
 
-  const[medication, setMedication]=useState(null);
+  const[Medication, setMedication]=useState(null);
 
   
 
@@ -39,6 +39,8 @@ function App() {
 
   return (
     <>
+    
+    
 
   <div>
   <Routes>
@@ -49,6 +51,7 @@ function App() {
    
  </Routes>
 </div>
+
 <div className="site-card-wrapper">
       <Row gutter={16}>
         <Col span={8}>

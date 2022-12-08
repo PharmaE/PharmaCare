@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row,Col, Card} from 'antd';
 import Meta from 'antd/lib/card/Meta';
-import './Doc.css';
+import './css/Doc.css';
 
 
 function Doc(){
