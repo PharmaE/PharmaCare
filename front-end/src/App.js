@@ -21,9 +21,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Login auth={authenticate} />} />
-          <Route
-            path="/home"
-            element={<Home logout={logout} status={status} />}
+          <Route path="/home" element={<Home logout={logout} status={status} />}
           />
         </Routes>
       </div>
