@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import { Card } from "antd";
+import React from "react";
+import { Card} from "antd";
+import CardContent from "@mui/material/CardContent";
 
-export function Medication(props) {
-  const [age, setAge] = setState(0);
+export default function Medication(props) {
+  
   return (
-    <Col>
-      <Card
-        title="default size card"
-        extra={<a href="#">More</a>}
-        style={{ width: "30" }}
-      >
-        <hr />
-        <h2>{props.medicine}</h2>
-        <h2>{props.Date}</h2>
-        <h2>{props.name}</h2>
-        <h2>{props.age}</h2>
+    <React.Fragment>
+      <CardContent>
+      <Card title="Medicine Info" style={{padding:'18px', width: "30" }}>
+        <h2>{props.Medication}</h2>
+        <h2>{props.Directions}</h2>
+        <h2>{props.Quantity}</h2>
+        <h2>{props.Refills}</h2>
+        <h2>{props.Prescriber}</h2>
+        <h2>{props.Use}</h2>
       </Card>
-    </Col>
+    </CardContent>
+    </React.Fragment>
   );
 }
