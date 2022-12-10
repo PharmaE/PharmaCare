@@ -12,20 +12,21 @@ const { Meta } = Card;
 
 export default function Home() {
   const [size, setSize] = useState("large");
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   return (
     <>
     <div>
+      {/*  Code for the  Alert Box*/}
     <Box sx={{ width: '100%' }}>
       <Collapse in={open}>
-        <Alert
+        <Alert variant="filled"
           action={
             <IconButton
               aria-label="close"
               color="inherit"
               size="small"
               onClick={() => {
-                setOpen(true);
+                setOpen(false);
               }}
             >
               <CloseIcon fontSize="inherit" />
@@ -36,8 +37,9 @@ export default function Home() {
           Apointment Booked!! Details are mailed 
         </Alert>
       </Collapse>
-      
-    </Box>
+      </Box>
+
+     {/* ****The Content of Home page ****/}
     </div>
       <div>
         <h1> Find The Best Doctor Near By You</h1>
@@ -52,6 +54,8 @@ export default function Home() {
         </p>
       </div>
       <div>
+
+        {/********** The Card to book appointment for the vaccine***********/}
         <Row gutter={25}>
           <Col span={2}>
             <Card
@@ -66,35 +70,25 @@ export default function Home() {
             >
               <Meta title="Get Your COVID-19 Vaccine" />
               <br />
-              <Button type="primary" size={size}>
-                Book Apointment
-              </Button>
+              <Button type="primary" size={size} disabled={open} variant="outlined" onClick={() => {setOpen(true);}}>
+            Book Apointment
+           </Button>
             </Card>
             <Card
               hoverable
               style={{ width: 280 }}
-              cover={
-                <img
-                  alt="example"
-                  src="https://www.rexall.ca/static/version1669727032/frontend/Rexall/default/en_US/images/icons/callout-icon-flu-shot.png?t=1669727099"
-                />
-              }
-            >
+              cover={<img alt="example" src="https://www.rexall.ca/static/version1669727032/frontend/Rexall/default/en_US/images/icons/callout-icon-flu-shot.png?t=1669727099"/>}>
               <Meta title="Get Your Flu Shot" />
               <br />
-              <Button
-        disabled={open}
-        variant="outlined"
-        onClick={() => {
-          setOpen(true);
-        }}
-      >
-        Re-open
-      </Button>
+            <Button type="primary" size={size} disabled={open} variant="outlined" onClick={() => {setOpen(true);}}>
+            Book Apointment
+           </Button>
             </Card>
           </Col>
         </Row>
       </div>
+
+      {/* Code for the Pharmacy Servies */}
       <h1>Pharmacy Serivces</h1>
       <div className="site-card-wrapper">
         <Row gutter={16}>
