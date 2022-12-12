@@ -1,22 +1,51 @@
 .App {
   text-align: center;
+  width: 980px;
+  
 }
+
+
+
 
 
 .nav{
-  background-color: white;
-  position: fixed;
+  
+  background-color: rgb(255, 255, 255);
+  position:fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
+  font-size: 1.2em;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  
 }
 
 .link{
-  display: block;
-  margin-left: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 60px;
   
+  
+}
+
+.li{
+  text-align: center;
+  display: block;
+  justify-content: flex-end;
+  margin-left: 40px;
+  color: orange;
+
+}
+
+.lilog{
+  margin-left: 520px;
+  text-align: center;
+  display: block;
+  justify-content: flex-end;
+  color: orange;
 }
 

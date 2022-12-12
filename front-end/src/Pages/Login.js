@@ -21,7 +21,7 @@ const Login=(props)=> {
   };
   return (
     
-  <div style={{ marginTop: "30px" }}>
+  <div style={{ margin: "140px 940px 0px 0px" }}>
       <Paper
         className="login-paper"
         sx={{
