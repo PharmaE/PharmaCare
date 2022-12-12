@@ -22,7 +22,8 @@ function App() {
     <>
       <Space direction="vertical" style={{display:'flex'}} >
         <Row className="nav">
-          <nav>
+          <h1>PharmaCare</h1>
+          <nav className="link">
             <Link to="/home">Home</Link>
             <Link to="/shop">Shop</Link>
             <Link to="/doc">Docs</Link>
