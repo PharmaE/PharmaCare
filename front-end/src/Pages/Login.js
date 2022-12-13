@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Checkbox, Form, Input} from "antd";
 import Paper from '@mui/material/Paper';
 import {useNavigate} from "react-router-dom";
-import './css/Login.css';
+
 
 const Login=(props)=> {
 
@@ -21,7 +21,7 @@ const Login=(props)=> {
   };
   return (
     
-  <div style={{ margin: "140px 940px 0px 0px" }}>
+  <div style={{ margin: "140px 940px 20px 30px" }}>
       <Paper
         className="login-paper"
         sx={{
@@ -88,8 +88,10 @@ const Login=(props)=> {
             <Button type="primary" htmlType="submit">
               Sign Up
             </Button>
+
           </Form.Item>
         </Form>
+
       </Paper>
     </div>
     
