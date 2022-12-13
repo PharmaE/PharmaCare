@@ -1,7 +1,7 @@
 import express from "express";
+import { addMedicalInfo } from "../controllers/medicalInfo.js";
 const router = express.Router();
 
-import { addMedicalInfo } from "../controllers/medicalInfo.js";
 
 router.post("/addMedicalInfo", addMedicalInfo);
 

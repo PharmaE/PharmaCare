@@ -3,12 +3,17 @@
 }
 
 .header{
+    
     margin-top: 80px;
     color: white;
-    
+    font-family: 'Courier New', Courier, monospace;
 } 
 
 .card{
     width: 20;
     height: 20;
+}
+
+.button{
+    margin-left: 5px;
 }
