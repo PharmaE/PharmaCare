@@ -4,14 +4,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     
+    
+    
+}
+
+h1 ,h3,p{
     text-align: center;
-    margin-left: 20px;
+    
 }
 
 .content{
     justify-content: center;
+    margin-bottom: 20px;
+    
     
 }
+
+
 
 .card{
 
@@ -19,3 +28,5 @@ body{
     flex-wrap: wrap;
 
 }
+
+

@@ -11,12 +11,28 @@ const { Meta } = Card;
 
 export default function Home() {
   const [size, setSize] = useState("large");
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   return (
-    <>
     <div>
+
+     {/* ****The Content of Home page ****/}
+      <div style={{margin:"100px 0px 30px 0px"}}>
+        <h1> Find The Best Doctor Near By You</h1>
+        <h3>
+          The Pharma Care is your best alternative to online and traditional
+          big-box pharmacies.
+        </h3>
+        <p>
+          Get the same conveniences free delivery, a free app, online refills &
+          transfers, plus you will love our helpful, friendly and caring staff
+          who go the extra mile on the phone and online.
+        </p>
+      </div>
+
+        {/********** The Card to book appointment for the vaccine***********/}
+        <div>
       {/*  Code for the  Alert Box*/}
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '50%' }}>
       <Collapse in={open}>
         <Alert variant="filled"
           action={
@@ -38,21 +54,6 @@ export default function Home() {
       </Collapse>
       </Box>
       </div>
-     {/* ****The Content of Home page ****/}
-      <div>
-        <h1> Find The Best Doctor Near By You</h1>
-        <h3>
-          The Pharma Care is your best alternative to online and traditional
-          big-box pharmacies.
-        </h3>
-        <p>
-          Get the same conveniences free delivery, a free app, online refills &
-          transfers, plus you will love our helpful, friendly and caring staff
-          who go the extra mile on the phone and online.
-        </p>
-      </div>
-
-        {/********** The Card to book appointment for the vaccine***********/}
       <div className="site-card-wrapper">
         <Row span={16} className="content">
           <Col span={4}>
@@ -70,7 +71,7 @@ export default function Home() {
             <Col span={4}>
             <Card 
               hoverable
-              style={{ width: 220 }}
+              style={{ width: 220}}
               cover={<img alt="example" src="https://www.rexall.ca/static/version1669727032/frontend/Rexall/default/en_US/images/icons/callout-icon-flu-shot.png?t=1669727099"/>}>
               <Meta title="Get Your Flu Shot" />
               <br />
@@ -84,7 +85,7 @@ export default function Home() {
       </div>
 
       {/* Code for the Pharmacy Servies */}
-      <h1>Pharmacy Serivces</h1>
+      <h1 style={{margin:"50px 0px 30px 0px", color:"black solid"}}>Pharmacy Serivces</h1>
       <div className="site-card-wrapper" >
         <Row gutter={16} className="content">
           <Col span={4}>
@@ -94,7 +95,7 @@ export default function Home() {
             </Card>
           </Col>
           <Col span={4}>
-            <Card title="Diabetes" bordered={false} style={{ width: 220 }}>
+            <Card title="Diabetes" bordered={false} style={{ width: 220, height:190 }}>
               PharmaCare Pharmacists can help you manage diabetes.
             </Card>
           </Col>
@@ -105,12 +106,12 @@ export default function Home() {
             </Card>
           </Col>
           <Col span={4}>
-            <Card title="Online Servies" bordered={false} style={{ width: 220 }}>
+            <Card title="Online Servies" bordered={false} style={{ width: 220, height:190 }}>
               Connect with a Doctor virtually from the comfort of your home.
             </Card>
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   );
 }

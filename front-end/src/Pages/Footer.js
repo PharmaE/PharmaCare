@@ -16,7 +16,7 @@ export default function Footer() {
       className="text-center text-lg-start "
       style={{ width:"100%"}}
     >
-      <section className="d-flex justify-content-center justify-content-lg-between p-1 border-bottom">
+      <section className="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
       <section className="">
         <MDBContainer className="text-center text-sm-start mt-5">
           <MDBRow className="mt-3">
-            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-2">
+            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
                 PharmaCare
@@ -67,7 +67,7 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-2">
+            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Services</h6>
               <p>
                 <a
@@ -103,7 +103,7 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-2">
+            <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-3">
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
                 <a href="http://localhost:3000/home" className="text-reset" >Home</a>
@@ -119,11 +119,11 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-2">
+            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                Etobicoke,ON M9C 4W4, CAN
+                Etobicoke,ON CAN
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />

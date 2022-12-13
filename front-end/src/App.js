@@ -29,7 +29,6 @@ function App() {
             <Link to="/home" className="li">Home</Link>
             <Link to="/shop" className="li">Shop</Link>
             <Link to="/doc" className="li">Docs</Link>
-            <Link to="/about" className="li">About</Link>
             <Link to="/contactus" className="li">Contact Us</Link>
           <Link to="/" className="lilog">Log Out</Link>
           </nav>
