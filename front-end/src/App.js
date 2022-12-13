@@ -6,6 +6,7 @@ import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import Medication from "./Pages/Medication";
 import Doc from "./Pages/Doc"; 
+import Footer from "./Pages/Footer";
 
 
 function App() {
@@ -42,8 +43,8 @@ function App() {
           <Route path="/doc" element={<Doc/>}/>
         </Routes>
     </div>
-
-
+    
+      <Footer/>
 
     </>
   );
