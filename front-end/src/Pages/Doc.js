@@ -21,7 +21,7 @@ export default function Doc() {
           <MDBCardTitle>Omari</MDBCardTitle>
           <MDBCardText>Obestrics & Gynaecology</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-           <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+           <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -50,7 +50,7 @@ export default function Doc() {
           <MDBCardTitle>Andrew Wilson</MDBCardTitle>
           <MDBCardText>Dermatologists</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -77,9 +77,9 @@ export default function Doc() {
         />
         <MDBCardBody>
           <MDBCardTitle>Eli Chu</MDBCardTitle>
-          <MDBCardText>Geriatric Medicine Speciaists</MDBCardText>
+          <MDBCardText>Geriatric Speciaists</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -108,7 +108,7 @@ export default function Doc() {
           <MDBCardTitle>Shrishti</MDBCardTitle>
           <MDBCardText>Hematology</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -137,7 +137,7 @@ export default function Doc() {
           <MDBCardTitle>Maria</MDBCardTitle>
           <MDBCardText>Neurosurgery</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -166,7 +166,7 @@ export default function Doc() {
           <MDBCardTitle>Emily Gilbert</MDBCardTitle>
           <MDBCardText>Pdychiatry</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -195,7 +195,7 @@ export default function Doc() {
           <MDBCardTitle>Kathryn Cooper</MDBCardTitle>
           <MDBCardText>Ophthalmologists</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -224,7 +224,7 @@ export default function Doc() {
           <MDBCardTitle>Bobby Stanley</MDBCardTitle>
           <MDBCardText>Pediatricinas</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 
@@ -253,7 +253,7 @@ export default function Doc() {
           <MDBCardTitle>Mathew Reyes</MDBCardTitle>
           <MDBCardText>Geriatric Medicine</MDBCardText>
           <MDBBtn floating tag='a'><MDBIcon fas icon="comment-alt"/></MDBBtn>
-          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='#' className="button">
+          <MDBBtn floating tag='a' style={{ backgroundColor: '#3b5998' }} href='https://www.facebook.com/' className="button">
         <MDBIcon fab icon='facebook-f' />
       </MDBBtn>
 

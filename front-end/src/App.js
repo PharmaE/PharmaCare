@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Medication from "./Pages/Medication";
 import Doc from "./Pages/Doc"; 
 import Footer from "./Pages/Footer";
+import ContactUs from "./Pages/ContactUs";
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
           <Route path="/home" element={<Home logout={logout} status={status} />}/>
           <Route path="/shop" element={<Medication/>}/>
           <Route path="/doc" element={<Doc/>}/>
+          <Route path="/contactus" element={<ContactUs/>}/>
+
         </Routes>
     </div>
     

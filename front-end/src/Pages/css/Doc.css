@@ -5,13 +5,16 @@
 .header{
     
     margin-top: 80px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: large;
 } 
 
 .card{
     width: 20;
     height: 20;
+    font-weight: bold;
 }
 
 .button{
