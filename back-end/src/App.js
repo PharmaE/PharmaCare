@@ -1,12 +1,5 @@
-import React, { useState, } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import { Link, Route, Routes } from "react-router-dom";
-import { Space, Row } from "antd";
-import Login from "./Pages/Login";
-import Home from "./Pages/Home";
-import Medication from "./Pages/Medication";
-import Doc from "./Pages/Doc";
-import Footer from "./Pages/Footer";
 
 function App() {
   const commerce = new Commerce(process.env.REACT_APP_PUBLICKEY_SANDBOX);
