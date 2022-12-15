@@ -13,7 +13,12 @@ import {
 //import Medication from "./Components/Medication";
 import ReactStars from "react-rating-stars-component";
 import "./css/med.css";
+import {actFetchProductsRequest,AddCart} from "./actions/index";
+
+
 function MedicationList() {
+
+
   const medicationList = [
     {
       name: "Tablet",
@@ -160,7 +165,7 @@ function MedicationList() {
                         />{" "}
                         IN Stock: {medicationObj.countInStock}
                       </MDBCardText>
-                      <MDBBtn floating tag="a">
+                      <MDBBtn floating tag="a" onClick={()=>this.props.AddCart(medicationObj)}>
                         <i class="fas fa-shopping-basket"></i>
                         <MDBIcon fas icon="comment-alt" />
                       </MDBBtn>

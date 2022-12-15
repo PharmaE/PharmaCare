@@ -8,6 +8,7 @@ import MedicationList from "./Pages/MedicationList";
 import Doc from "./Pages/Doc"; 
 import Footer from "./Pages/Footer";
 import ContactUs from "./Pages/ContactUs";
+import Cart from "./Pages/Cart";
 
 
 function App() {
@@ -31,7 +32,9 @@ function App() {
             <Link to="/shop" className="li">Shop</Link>
             <Link to="/doc" className="li">Docs</Link>
             <Link to="/contactus" className="li">Contact Us</Link>
+          <Link to="/cart" className="crtlog">Cart</Link>
           <Link to="/" className="lilog">Log Out</Link>
+
           </nav>
         </Row >
     </Space>
@@ -42,6 +45,7 @@ function App() {
           <Route path="/shop" element={<MedicationList/>}/>
           <Route path="/doc" element={<Doc/>}/>
           <Route path="/contactus" element={<ContactUs/>}/>
+          <Route path="/cart" element={<Cart/>}/>
 
         </Routes>
     </div>
