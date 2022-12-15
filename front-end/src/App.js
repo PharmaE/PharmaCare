@@ -4,7 +4,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import { Space, Row } from "antd";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
-import Medication from "./Pages/Medication";
+import MedicationList from "./Pages/MedicationList";
 import Doc from "./Pages/Doc"; 
 import Footer from "./Pages/Footer";
 import ContactUs from "./Pages/ContactUs";
@@ -39,7 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login auth={authenticate} />} />
           <Route path="/home" element={<Home logout={logout} status={status} />}/>
-          <Route path="/shop" element={<Medication/>}/>
+          <Route path="/shop" element={<MedicationList/>}/>
           <Route path="/doc" element={<Doc/>}/>
           <Route path="/contactus" element={<ContactUs/>}/>
 

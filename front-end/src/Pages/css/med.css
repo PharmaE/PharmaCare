@@ -1,0 +1,9 @@
+.med{
+    margin: 100px 0px 0px 0px;
+}
+
+.card{
+    margin: 10px 0px 20px 120px;
+    display: flex;
+    flex-direction: row;
+}
