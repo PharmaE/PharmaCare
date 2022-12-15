@@ -12,6 +12,7 @@ export default function Doc() {
   <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
     <MDBCol className="h-25 w-25">
       <MDBCard>
+        
         <MDBCardImage
           src="https://w9r9i7y2.stackpathcdn.com/wp-content/uploads/2020/04/Doctor-2.jpg"
           position="top"

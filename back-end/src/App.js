@@ -1,7 +1,6 @@
 import commerce from "";
 import Grid from "antd";
 import emptyCart from "";
-import footer from "";
 import { useState, useEffect } from "react";
 import Navigation from "./Components/";
 function App() {
