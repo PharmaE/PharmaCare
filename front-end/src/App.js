@@ -9,10 +9,12 @@ import Doc from "./Pages/Doc";
 import Footer from "./Pages/Footer";
 import ContactUs from "./Pages/ContactUs";
 import Cart from "./Pages/Cart";
+import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 
 
 function App() {
   const [status, setStatus] = useState(false);
+ 
 
   const authenticate = () => {
     setStatus(true);
@@ -32,7 +34,10 @@ function App() {
             <Link to="/shop" className="li">Shop</Link>
             <Link to="/doc" className="li">Docs</Link>
             <Link to="/contactus" className="li">Contact Us</Link>
-          <Link to="/cart" className="crtlog">Cart</Link>
+            <MDBBtn floating tag="a" className="Button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <MDBIcon fas icon="comment-alt" />
+                      </MDBBtn>
           <Link to="/" className="lilog">Log Out</Link>
 
           </nav>

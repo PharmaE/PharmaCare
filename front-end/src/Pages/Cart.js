@@ -1,93 +1,62 @@
 import React from "react";
-import { connect } from "react-redux";
-import { IncreaseQuantity, DecreaseQuantity, DeleteCart } from "../actions";
 
-function Cart({ items, IncreaseQuantity, DecreaseQuantity, DeleteCart }) {
-  //  console.log(items)
-  let ListCart = [];
-  let TotalCart = 0;
-  Object.keys(items.Carts).forEach(function (item) {
-    TotalCart += items.Carts[item].quantity * items.Carts[item].price;
-    ListCart.push(items.Carts[item]);
-  });
-  function TotalPrice(price, tonggia) {
-    return Number(price * tonggia).toLocaleString("en-US");
-  }
+export default function Cart(props){
+    const{cartItems, onAdd , onRemove} = props;
+    const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
+    const totalPrice = itemsPrice;
 
-  return (
-    <div className="row">
-      <div className="col-md-12">
-        <table className="table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Image</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ListCart.map((item, key) => {
-              return (
-                <tr key={key}>
-                  <td>
-                    <i
-                      className="badge badge-danger"
-                      onClick={() => DeleteCart(key)}
-                    >
-                      X
-                    </i>
-                  </td>
-                  <td>{item.name}</td>
-                  <td>
-                    <img
-                      src={item.image}
-                      style={{ width: "100px", height: "80px" }}
-                      alt=""/>
-                  </td>
-                  <td>{item.price} $</td>
-                  <td>
-                    <span
-                      className="btn btn-primary"
-                      style={{ margin: "2px" }}
-                      onClick={() => DecreaseQuantity(key)}
-                    >
-                      -
-                    </span>
-                    <span className="btn btn-info">{item.quantity}</span>
-                    <span
-                      className="btn btn-primary"
-                      style={{ margin: "2px" }}
-                      onClick={() => IncreaseQuantity(key)}
-                    >
-                      +
-                    </span>
-                  </td>
-                  <td>{TotalPrice(item.price, item.quantity)} $</td>
-                </tr>
-              );
-            })}
-            <tr>
-              <td colSpan="5">Total Carts</td>
-              <td>{Number(TotalCart).toLocaleString("en-US")} $</td>
-            </tr>
-          </tbody>
-        </table>
+    return(
+        <>
+        <aside className="block col-1">
+      <h2>Cart Items</h2>
+      <div>
+        {cartItems.length === 0 && <div>Cart is empty</div>}
+        {cartItems.map((item) => (
+          <div key={item.id} className="row">
+            <div className="col-2">{item.name}</div>
+            <div className="col-2">
+              <button onClick={() => onRemove(item)} className="remove">
+                -
+              </button>{' '}
+              <button onClick={() => onAdd(item)} className="add">
+                +
+              </button>
+            </div>
+
+            <div className="col-2 text-right">
+              {item.qty} x ${item.price.toFixed(2)}
+            </div>
+          </div>
+        ))}
+
+        {cartItems.length !== 0 && (
+          <>
+            <hr></hr>
+            <div className="row">
+              <div className="col-2">Items Price</div>
+              <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
+            </div>
+           
+            <div className="row">
+              <div className="col-2">
+                <strong>Total Price</strong>
+              </div>
+              <div className="col-1 text-right">
+                <strong>${totalPrice.toFixed(2)}</strong>
+              </div>
+            </div>
+            <hr />
+            <div className="row">
+              <button onClick={() => alert('Implement Checkout!')}>
+                Checkout
+              </button>
+            </div>
+          </>
+        )}
       </div>
-    </div>
-  );
-}
-const mapStateToProps = (state) => {
-  //  console.log(state)
-  return {
-    items: state._todoProduct,
-  };
-};
+    </aside>
+</>
 
-export default connect(mapStateToProps, {
-  IncreaseQuantity,
-  DecreaseQuantity,
-  DeleteCart,
-})(Cart);
+
+    )
+}

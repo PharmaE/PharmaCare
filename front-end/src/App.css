@@ -47,20 +47,18 @@
 }
 
 .lilog{
-  margin-left: 80px;
+  margin-left: 20px;
   text-align: center;
   display: block;
   justify-content: flex-end;
   color: orange;
 }
 
-.crtlog{
-  margin:0px 0px 0px 530px;
-  text-align: center;
-  display: block;
-  justify-content: flex-end;
-  color: orange;
+.Button{
+  margin-left: 590px;
 }
+
+
 
 
 

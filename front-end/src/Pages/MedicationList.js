@@ -10,14 +10,14 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-//import Medication from "./Components/Medication";
 import ReactStars from "react-rating-stars-component";
 import "./css/med.css";
-import {actFetchProductsRequest,AddCart} from "./actions/index";
+
 
 
 function MedicationList() {
 
+ 
 
   const medicationList = [
     {
@@ -143,8 +143,10 @@ function MedicationList() {
     <>
       <div className="med">
         {medicationList.map((medicationObj) => {
+          
           return (
-            <div>
+            
+            <div >
               <MDBRow className="row-cols-1 row-cols-md-2 g-4 ">
                 <MDBCol className="h-25 w-25">
                   <MDBCard>
@@ -165,9 +167,8 @@ function MedicationList() {
                         />{" "}
                         IN Stock: {medicationObj.countInStock}
                       </MDBCardText>
-                      <MDBBtn floating tag="a" onClick={()=>this.props.AddCart(medicationObj)}>
-                        <i class="fas fa-shopping-basket"></i>
-                        <MDBIcon fas icon="comment-alt" />
+                      <MDBBtn floating tag="a">
+                        <i class="fas fa-shopping-basket"></i><MDBIcon fas icon="comment-alt" />
                       </MDBBtn>
                     </MDBCardBody>
                   </MDBCard>
