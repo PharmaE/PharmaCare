@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/448625e2-bf2d-4808-aaea-82ce59be46a2/resourceGroups/MOL-AppService/providers/Microsoft.Web/sites/pharmacy-easy",
+  "appService.deploySubpath": "."
+}
